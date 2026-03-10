@@ -5,21 +5,21 @@
 class XRay < Formula
   desc "코드베이스를 분석해 .x-ray/ 지도를 생성하는 CLI 도구"
   homepage "https://github.com/cclss/x-ray-releases"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cclss/x-ray-releases/releases/download/v0.2.0/x-ray-releases_0.2.0_darwin_amd64.tar.gz"
-      sha256 "35053647c4493534b5aeea951d63e51f04adc5e829845dacd2bbe3d7250d21ae"
+      url "https://github.com/cclss/x-ray-releases/releases/download/v0.3.0/x-ray-releases_0.3.0_darwin_amd64.tar.gz"
+      sha256 "34ca2c6b484632ebeb43078da058c318b81049f98758b9d61a3289c6b9840464"
 
       def install
         bin.install "x-ray"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cclss/x-ray-releases/releases/download/v0.2.0/x-ray-releases_0.2.0_darwin_arm64.tar.gz"
-      sha256 "05d3a75641f7fc0bf215bdf26e4937950b4376f8766ca070af1983b5d4fdd467"
+      url "https://github.com/cclss/x-ray-releases/releases/download/v0.3.0/x-ray-releases_0.3.0_darwin_arm64.tar.gz"
+      sha256 "44ea140de78ab1db711c8388236ea945fde76286f432e4185e713bd46a50f4ba"
 
       def install
         bin.install "x-ray"
@@ -29,15 +29,15 @@ class XRay < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cclss/x-ray-releases/releases/download/v0.2.0/x-ray-releases_0.2.0_linux_amd64.tar.gz"
-      sha256 "59025eb0bd12b856a6c22ed9d1b81e36a60b2096f896de7fa92a743b299e2444"
+      url "https://github.com/cclss/x-ray-releases/releases/download/v0.3.0/x-ray-releases_0.3.0_linux_amd64.tar.gz"
+      sha256 "cde83362bad4c9b3483201451311997511f1bc224d60c08312607acb4d3406fa"
       def install
         bin.install "x-ray"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cclss/x-ray-releases/releases/download/v0.2.0/x-ray-releases_0.2.0_linux_arm64.tar.gz"
-      sha256 "1437c59eabd0c666b53249b31be89710f942fbe2797445ba2d928c01b7d78f10"
+      url "https://github.com/cclss/x-ray-releases/releases/download/v0.3.0/x-ray-releases_0.3.0_linux_arm64.tar.gz"
+      sha256 "61bae998780a0ba0c8e2a191ebf76006519dd58ec67ffdfbe2eac0073a614449"
       def install
         bin.install "x-ray"
       end
