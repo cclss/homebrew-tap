@@ -11,7 +11,7 @@ class CharlieCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.10/charlie_2.2.10_darwin_amd64.tar.gz"
-      sha256 "e3b80e4d8208524a489bd85676c23c4ea1aacb3bc759095e90fc04b329bfb3e2"
+      sha256 "e18dca6a78e7bd3c5d7c2960678244dba92fb4a3006a79d5bfba2f79875a9ac2"
 
       define_method(:install) do
         bin.install "charlie"
@@ -19,7 +19,7 @@ class CharlieCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.10/charlie_2.2.10_darwin_arm64.tar.gz"
-      sha256 "0c1bb0874624fed7a91206279aed703d71653c147af3a7ad37146c0323f1cb4e"
+      sha256 "2c44cd5480b498b6dcee566cb3db7a93afa6f31a51aa57c0d2a5736eec1e211f"
 
       define_method(:install) do
         bin.install "charlie"
@@ -30,14 +30,14 @@ class CharlieCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.10/charlie_2.2.10_linux_amd64.tar.gz"
-      sha256 "f7286c2ab37aab7b9cfaddfc726288cc689649337a66c4a5d8d5ced6e7544dfe"
+      sha256 "de31a9f176e7c924002525cf5ebd62243b984419cd6921c85ad922e6cbceb829"
       define_method(:install) do
         bin.install "charlie"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.10/charlie_2.2.10_linux_arm64.tar.gz"
-      sha256 "95cf7422ceafc6ea2bed23d97e21959270c383fb33c4e957b5cd564c252b842c"
+      sha256 "4dd93dd65d565d1b68666dbc79a451e900c49e2f502941b8159d75b29d0b9705"
       define_method(:install) do
         bin.install "charlie"
       end
