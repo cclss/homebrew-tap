@@ -5,21 +5,21 @@
 class CharlieCli < Formula
   desc "AI-native autonomous development orchestrator"
   homepage "https://github.com/cclss/charlie-cli"
-  version "2.2.34-codex.1"
+  version "2.2.34-codex.2-debug-ask"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.34-codex.1/charlie_2.2.34-codex.1_darwin_amd64.tar.gz"
-      sha256 "e8300229b90d76019b1bb74ecda100590839541d69b092dd2ad56617537a320e"
+      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.34-codex.2-debug-ask/charlie_2.2.34-codex.2-debug-ask_darwin_amd64.tar.gz"
+      sha256 "9720e46b2d5e7304c4f969c4a5de404a2369c341e5fff081c7da042a49c3ca05"
 
       define_method(:install) do
         bin.install "charlie"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.34-codex.1/charlie_2.2.34-codex.1_darwin_arm64.tar.gz"
-      sha256 "b31d7b9d2d97166100d46413fa98b3ab636bc3166caa13f84c7c50addd829763"
+      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.34-codex.2-debug-ask/charlie_2.2.34-codex.2-debug-ask_darwin_arm64.tar.gz"
+      sha256 "bc04bfeca33cb361f30c6d446ab3728a88ac44af5d0379c7078335fdefe9f2eb"
 
       define_method(:install) do
         bin.install "charlie"
@@ -29,15 +29,15 @@ class CharlieCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.34-codex.1/charlie_2.2.34-codex.1_linux_amd64.tar.gz"
-      sha256 "018a855da7924106334475df2437a3ece4516bb9ceba5a910c5e79229173a55e"
+      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.34-codex.2-debug-ask/charlie_2.2.34-codex.2-debug-ask_linux_amd64.tar.gz"
+      sha256 "9dc8661dd9adecad0e7d03fb0da6ab3c527e2b6c62a6747f2ac8cb08d3d878c0"
       define_method(:install) do
         bin.install "charlie"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.34-codex.1/charlie_2.2.34-codex.1_linux_arm64.tar.gz"
-      sha256 "f6a984d7c01645a941dc5c2b94a88d37e72fbf6e584df96497b253c8941f670a"
+      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.34-codex.2-debug-ask/charlie_2.2.34-codex.2-debug-ask_linux_arm64.tar.gz"
+      sha256 "7b372c47f438a3c872dd28052e9eb2a766aa37bd05b0532d9c91e416b11798ca"
       define_method(:install) do
         bin.install "charlie"
       end
