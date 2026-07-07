@@ -5,21 +5,21 @@
 class CharlieCli < Formula
   desc "AI-native autonomous development orchestrator"
   homepage "https://github.com/cclss/charlie-cli"
-  version "2.2.39"
+  version "2.2.41"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.39/charlie_2.2.39_darwin_amd64.tar.gz"
-      sha256 "b82c13d8e1a17d124989399b6a6daeb3a4e547c28f1a45532112750875f18d3d"
+      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.41/charlie_2.2.41_darwin_amd64.tar.gz"
+      sha256 "0975afc677ede52c010781d3e05e2211b299543dbdc970f34604199795a0cd28"
 
       define_method(:install) do
         bin.install "charlie"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.39/charlie_2.2.39_darwin_arm64.tar.gz"
-      sha256 "cd8207f7b34f9092f4d6eee17774f912dd003d75135e7a178288c46d57228c5d"
+      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.41/charlie_2.2.41_darwin_arm64.tar.gz"
+      sha256 "fdd2142a159f9515b97df7542f945b29bcccffb48fdb452605e3e858751cf961"
 
       define_method(:install) do
         bin.install "charlie"
@@ -29,15 +29,15 @@ class CharlieCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.39/charlie_2.2.39_linux_amd64.tar.gz"
-      sha256 "42411c7c5d8d7db1713bd2cf2bf7a86652ec33fa4de9b15aebf28bb912a1b501"
+      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.41/charlie_2.2.41_linux_amd64.tar.gz"
+      sha256 "2931862527803e1080ec82bf1cc297af419585ab92496df386bd3e592c10a6bf"
       define_method(:install) do
         bin.install "charlie"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.39/charlie_2.2.39_linux_arm64.tar.gz"
-      sha256 "8d388cffab8d8363e725cbe2a95c1d8c504dd6193ad15caa16ce113608a1c816"
+      url "https://github.com/cclss/charlie-cli-releases/releases/download/v2.2.41/charlie_2.2.41_linux_arm64.tar.gz"
+      sha256 "0558cecce75d94a23a769fc100938810b768f451e74eee59fc63a46df2ab340f"
       define_method(:install) do
         bin.install "charlie"
       end
